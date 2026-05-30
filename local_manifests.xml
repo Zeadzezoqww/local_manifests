@@ -15,16 +15,21 @@
             fetch="https://github.com/AxionAOSP" />
 
     <remote name="lineage"
-	    fetch="https://github.com/LineageOS" />
+            fetch="https://github.com/LineageOS" />
 
     <remote name="puh"
-	    fetch="https://github.com/puuuuh" />
+            fetch="https://github.com/puuuuh" />
 
-    <!-- Repos -->
-    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="puh" revision="6.12" />
-	<project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="puh" revision="hos3-test" /> -->
+    <!-- Your personal remote for tanzanite -->
+    <remote name="zeadzezoqww"
+            fetch="https://github.com/Zeadzezoqww" />
+
+    <!-- Repos (Linked to your GitHub and 6.12 branch) -->
+    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="zeadzezoqww" revision="6.12" />
+    <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="zeadzezoqww" revision="6.12" /> 
 
     <!-- Vendor -->
+    <project path="vendor/xiaomi/tanzanite" name="vendor_xiaomi_tanzanite" remote="zeadzezoqww" revision="6.12" />
     <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="puh" revision="lineage-23.2" />
     <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="millenium" revision="sixteen-qpr2" />
 
@@ -41,3 +46,4 @@
     <project path="packages/apps/ViPER4AndroidFX" name="android_packages_apps_ViPER4AndroidFX" remote="ax" revision="v4a" />
 
 </manifest>
+
