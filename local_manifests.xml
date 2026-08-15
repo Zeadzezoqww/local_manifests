@@ -13,7 +13,7 @@
     <project path="kernel/xiaomi/sm6475-modules" name="android_kernel_xiaomi_sm6475-modules" remote="kunzite_source" />
     
     <!-- Vendor Dependencies -->
-    <project path="vendor/xiaomi/kunzite" name="proprietary_vendor_xiaomi_kunzite" remote="ben_gitlab" />
+    <project path="vendor/xiaomi/kunzite" name="proprietary_vendor_xiaomi_kunzite" remote="kunzite_source" revision="lineage-24.0" />
 
     <!-- Hardware Dependencies -->
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage_source" />
