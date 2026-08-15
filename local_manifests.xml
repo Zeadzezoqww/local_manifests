@@ -7,7 +7,7 @@
     <remote name="lineage_source" fetch="https://github.com/LineageOS" />
 
     <!-- Xiaomi Kunzite Device Trees & Kernels -->
-    <project path="device/xiaomi/kunzite" name="android_device_xiaomi_kunzite" remote="kunzite_source" />
+    <project path="device/xiaomi/kunzite" name="android_device_xiaomi_kunzite" remote="kunzite_source" revision="lineage-24.0" />
     <project path="kernel/xiaomi/sm6475" name="android_kernel_xiaomi_sm6475" remote="kunzite_source" />
     <project path="device/xiaomi/kunzite-kernel" name="android_device_xiaomi_kunzite-kernel" remote="kunzite_source" />
     <project path="kernel/xiaomi/sm6475-modules" name="android_kernel_xiaomi_sm6475-modules" remote="kunzite_source" />
