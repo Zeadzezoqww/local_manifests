@@ -3,19 +3,16 @@
 
     <!-- Specific Account Remotes -->
     <remote name="kunzite_source" fetch="https://github.com/xiaomi-kunzite" />
-    <remote name="ben_gitlab" fetch="https://gitlab.com/heybyben" />
     <remote name="lineage_source" fetch="https://github.com/LineageOS" />
 
-    <!-- Xiaomi Kunzite Device Trees & Kernels -->
+    <!-- ONLY Device & Vendor on 24.0 -->
     <project path="device/xiaomi/kunzite" name="android_device_xiaomi_kunzite" remote="kunzite_source" revision="lineage-24.0" />
-    <project path="kernel/xiaomi/sm6475" name="android_kernel_xiaomi_sm6475" remote="kunzite_source" />
-    <project path="device/xiaomi/kunzite-kernel" name="android_device_xiaomi_kunzite-kernel" remote="kunzite_source" />
-    <project path="kernel/xiaomi/sm6475-modules" name="android_kernel_xiaomi_sm6475-modules" remote="kunzite_source" />
-    
-    <!-- Vendor Dependencies -->
     <project path="vendor/xiaomi/kunzite" name="proprietary_vendor_xiaomi_kunzite" remote="kunzite_source" revision="lineage-24.0" />
 
-    <!-- Hardware Dependencies -->
-    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage_source" />
+    <!-- Kernels & Hardware HALs remain on 23.2 -->
+    <project path="kernel/xiaomi/sm6475" name="android_kernel_xiaomi_sm6475" remote="kunzite_source" revision="lineage-23.2" />
+    <project path="device/xiaomi/kunzite-kernel" name="android_device_xiaomi_kunzite-kernel" remote="kunzite_source" revision="lineage-23.2" />
+    <project path="kernel/xiaomi/sm6475-modules" name="android_kernel_xiaomi_sm6475-modules" remote="kunzite_source" revision="lineage-23.2" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage_source" revision="lineage-23.2" />
 
 </manifest>
