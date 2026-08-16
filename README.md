@@ -6,4 +6,5 @@ These are the local manifests used to build Android 16 custom ROMs for the Xiaom
 First, initialize your ROM's main repository (e.g., LineageOS, Lunaris, ProjectMatrixx, etc.) following their official instructions.
 
 ```bash
-git clone [https://github.com/Zeadzezoqww/local_manifests.git](https://github.com/Zeadzezoqww/local_manifests.git) -b master .repo/local_manifests
+git clone https://github.com/Zeadzezoqww/local_manifests.git -b master .repo/local_manifests
+
